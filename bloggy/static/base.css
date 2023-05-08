@@ -1,0 +1,58 @@
+body {
+    background-color: bisque;
+}
+
+ul {
+    display: block;
+    max-width: 50%;
+}
+
+li{
+    padding: 5px 4px;
+
+}
+
+a {
+    color: black;
+    font-weight: 800;
+    display: block;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(1, 1, 0);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.a__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions {
+    justify-self: flex-end;
+    display: flex;
+}
+.delete {
+    background-color: red;
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.update {
+    background-color: white;
+    color: black;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.create > a{
+    background-color: black;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    max-width: 120px;
+    text-align: center;
+}

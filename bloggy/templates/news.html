@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>All News</h1>
+
+<div class="create">
+    <a href="{% url 'news:news-create' %}">Create</a>
+</div>
+
+<ul>
+    {% for n in news %}
+    <li>
+        <div class="a__group">
+            <a href="{% url 'news:news-detail' news_id=n.id %}">
+                {{ n.headline }}
+            </a>
+            <div class="actions">
+                <a href="{% url 'news:news-update' news_id=n.id %}" class="update">Update</a>
+                <a href="{% url 'news:news-delete' news_id=n.id %}" class="delete">Delete</a>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
